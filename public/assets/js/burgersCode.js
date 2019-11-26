@@ -29,8 +29,11 @@ $(function() {
   
       var newBurger = {
         burger_name: $("#ca").val().trim(),
-        devoured: $("[name=devoured]:unchecked").val().trim()
+        devoured: $("[name=devoured]").val()
       };
+
+      console.log("newBurger is ");
+      console.log(newBurger);
   
       // Send the POST request.
       $.ajax("/api/burgers", {
