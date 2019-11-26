@@ -3,6 +3,8 @@ $(function() {
     $(".change-devour").on("click", function(event) {
       var id = $(this).data("id");
       var newDevour = $(this).data("newdevour");
+
+      console.log("From inside burgersCode.js, newDevour is " + newDevour);
   
       var newDevourState = {
         devoured: newDevour
